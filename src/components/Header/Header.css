@@ -1,0 +1,24 @@
+.h-wrapper{
+    color: white;
+    /* background: black; */
+}
+
+.h-container{
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color:#495E57;
+}
+
+.h-menu{
+    gap: 2rem;
+}
+
+a{
+    font-weight: 600;
+}
+
+.inside-menu:hover{
+    cursor: pointer;
+    color: #f4ce14;
+}
