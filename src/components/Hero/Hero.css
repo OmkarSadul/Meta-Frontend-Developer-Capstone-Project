@@ -28,6 +28,9 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     letter-spacing: 8px;
 }
+.hero-title>h3{
+    color: var(--secondary);
+}
 
 .yellow-circle{
     height: 4rem;

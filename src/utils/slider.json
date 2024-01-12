@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Special Sandwich",
+    "price": "200",
+    "detail": "Lorem ipsum dolor, sit amet consectetur adipisicing elit, Distinctio odit doloremque.", 
+    "image": "./sandwich1.jpg"
+  },
+  {
+    "name": "Crescent Samosa",
+    "price": "170",
+    "detail": "Lorem ipsum dolor, sit amet consectetur adipisicing elit, Distinctio odit doloremque.",
+    "image": "./samosa.jpg"
+  },
+  {
+    "name": "Fruit Chaat",
+    "price": "180",
+    "detail": "Lorem ipsum dolor, sit amet consectetur adipisicing elit, Distinctio odit doloremque.",
+    "image": "./fruit-chaat.jpg"
+  },
+  {
+    "name": "Ukadiche Modak",
+    "price": "180",
+    "detail": "Lorem ipsum dolor, sit amet consectetur adipisicing elit, Distinctio odit doloremque.",
+    "image": "./modak.jpg"
+  },
+  {
+    "name": "Coconut Ladoo",
+    "price": "180",
+    "detail": "Lorem ipsum dolor, sit amet consectetur adipisicing elit, Distinctio odit doloremque.",
+    "image": "./coconut-ladoo.jpg"
+  },
+  {
+    "name": "Coconut Burfi",
+    "price": "200",
+    "detail": "Lorem ipsum dolor, sit amet consectetur adipisicing elit, Distinctio odit doloremque.",
+    "image": "./coconut-burfi.jpg"
+  }
+]

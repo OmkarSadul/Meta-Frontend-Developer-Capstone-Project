@@ -10,6 +10,8 @@
   --primary:#f4ce14;
   --primary2:#495e57;
   --secondary: rgba(255, 255, 255, 0.78);
+  --secondaryPink:#ee9972;
+  --secondaryCream:#fbdabb;
   --black:#131110;
   --darkGreen:#495e57;
   --highlight1:#edefee;
@@ -84,13 +86,18 @@ a {
 }
 
 .primaryText{
-  color: yellow;
+  color: var(--primary);
   font-weight: bold;
   font-size: 2rem;
 }
 
 .secondaryText{
-  color: var(--highlight1);
+  color: rgb(140, 139, 139);
+  font-size: 0.9rem;
+}
+
+.secondaryText2{
+  color: rgb(241, 240, 240);
   font-size: 0.9rem;
 }
 

@@ -18,10 +18,10 @@ const Hero = () => {
           </div>
 
           <div className="flexColStart hero-dec">
-            <span className="secondaryText">
+            <span className="secondaryText2">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
             </span>
-            <span className="secondaryText">
+            <span className="secondaryText2">
               Dicta dolores voluptates excepturi cupiditate repellendus
               dignissimos.
             </span>
@@ -40,7 +40,7 @@ const Hero = () => {
                 <CountUp start={4985} end={5000} duration={4}/>
                 <span>+</span>
               </span>
-              <span className="secondaryText">Happy Customers</span>
+              <span className="secondaryText2">Happy Customers</span>
             </div>
 
             <div className="flexColCenter stat">
@@ -48,7 +48,7 @@ const Hero = () => {
                 <CountUp end={27} duration={4}/>
                 <span>+</span>
               </span>
-              <span className="secondaryText">Award Winning</span>
+              <span className="secondaryText2">Award Winning</span>
             </div>
 
             <div className="flexColCenter stat">
@@ -59,7 +59,7 @@ const Hero = () => {
                 <CountUp end={6} duration={4}/>
                 <span><StarIcon height={23} width={23}/></span>
               </span>
-              <span className="secondaryText">Our Rating</span>
+              <span className="secondaryText2">Our Rating</span>
             </div>
 
           </div>
