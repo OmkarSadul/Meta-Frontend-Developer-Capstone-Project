@@ -11,6 +11,9 @@
   --primary2:#495e57;
   --secondary: rgba(255, 255, 255, 0.78);
   --black:#131110;
+  --darkGreen:#495e57;
+  --highlight1:#edefee;
+  --highlight2:#333333;
   --yellow-gradient:linear-gradient(97.05deg, #f2d12d 3.76%, #f4ce14 100%);
   --orange-gradient:linear-gradient(270deg, #ffb978 0%, #ff922d 100%);
   --blue:#4066ff;
@@ -87,7 +90,7 @@ a {
 }
 
 .secondaryText{
-  color: green;
+  color: var(--highlight1);
   font-size: 0.9rem;
 }
 
