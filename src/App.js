@@ -1,4 +1,5 @@
 import './App.css';
+import AboutUs from './components/AboutUs/AboutUs';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import TodaySpecials from './components/TodaySpecials/TodaySpecials';
@@ -9,6 +10,7 @@ function App() {
       <Header/>
       <Hero/>
       <TodaySpecials/>
+      <AboutUs/>
     </>
   );
 }

@@ -8,6 +8,7 @@
   /* highlight2 #333333*/
 
   --primary:#f4ce14;
+  --primary3:#f4b814;
   --primary2:#495e57;
   --secondary: rgba(255, 255, 255, 0.78);
   --secondaryPink:#ee9972;
@@ -18,7 +19,7 @@
   --highlight2:#333333;
   --yellow-gradient:linear-gradient(97.05deg, #f2d12d 3.76%, #f4ce14 100%);
   --orange-gradient:linear-gradient(270deg, #ffb978 0%, #ff922d 100%);
-  --blue:#4066ff;
+  --blue:#5a79f6;
   --lightBlue:#eeeeff;
   --shadow:0px 23px 21px -8px rgba(136, 160, 255, 0.25);
 }
@@ -86,7 +87,13 @@ a {
 }
 
 .primaryText{
-  color: var(--primary);
+  color: orangered;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.primaryText2{
+  color: #495e57;
   font-weight: bold;
   font-size: 2rem;
 }
@@ -102,7 +109,7 @@ a {
 }
 
 .orangeText{
-  color: orange;
+  color: var(--primary);
   font-size: 1.5rem;
   font-weight: 600;
 }

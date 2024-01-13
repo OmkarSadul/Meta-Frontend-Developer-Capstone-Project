@@ -10,7 +10,7 @@ const TodaySpecials = () => {
     <section className="todaySpecial-wrapper">
       <div className="paddings innerWidth todaySpecial-container">
         <div className="todaySpecial-head flexColStart">
-          <span className="orangeText">Today's Specials!</span>
+          <span className="primaryText">Today's Specials!</span>
         </div>
 
         <Swiper {...sliderSettings}>
@@ -23,7 +23,7 @@ const TodaySpecials = () => {
                   <span style={{color:"orange"}}>₹</span>
                   <span>{card.price}</span>
                 </span>
-                <span className="primaryText">{card.name}</span>
+                <span className="orangeText">{card.name}</span>
                 <span className="secondaryText">{card.detail}</span>
               </div>
             </SwiperSlide>
