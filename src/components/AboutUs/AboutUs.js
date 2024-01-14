@@ -25,7 +25,7 @@ const AboutUs = () => {
 
         {/* right side */}
         <div className="flexColStart a-right">
-          <span className="primaryText">About Us</span>
+          <span className="primaryText">ABOUT US</span>
           <span className="secondaryText">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
             <br />
             Veritatis, saepe, ducimus quos explicabo quas facere totam corporis sed.

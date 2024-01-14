@@ -1,0 +1,57 @@
+.testimonials{
+    background: var(--highlight1);
+}
+
+.wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.orangeText{
+    font-size: 1.2rem;
+    color: rgb(75, 75, 254);
+    text-transform: uppercase;
+}
+
+.reviews{
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    color: var(--primary2);
+}
+.tcarousel{
+    width: 50%;
+}
+
+.c-container{
+    position: relative;
+    background: white;
+    border-radius: 1rem;
+    align-items: center;
+    padding: 1rem;
+    gap: 0.5rem;
+    box-shadow: orange;
+    width: 50%;
+    left: 25%;
+    right: 25%;
+    box-shadow: var(--shadow);
+}
+
+.c-container>img{
+    position: relative;
+    width: 5rem;
+}
+
+.c-container>span:nth-of-type(1){
+    align-items: center;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    margin-top: 2rem;
+}
+
+.c-container>hr{
+    height: 1px;
+    width: 100%;
+    color: gray;
+    /* border: none; */
+}
