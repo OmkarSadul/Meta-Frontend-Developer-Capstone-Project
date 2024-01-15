@@ -99,3 +99,7 @@
     height: 0.5px;
     width: 80%;
 }
+
+.copyright>span{
+    font-size: 0.7rem;
+}
