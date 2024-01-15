@@ -1,0 +1,16 @@
+.j-container{
+    background: var(--primary2);
+    padding: 3rem;
+    width: 90%;
+    border-radius: 1rem;
+    border: 8px solid #60716b;
+}
+
+.inner-container{
+    gap: 2rem;
+}
+
+.j-wrapper .primaryText{
+    color: var(--primary);
+    text-transform: uppercase;
+}

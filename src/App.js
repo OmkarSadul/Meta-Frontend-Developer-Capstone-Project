@@ -4,6 +4,7 @@ import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
+import Join from './components/Join/Join';
 import Testimonials from './components/Testimonials/Testimonials';
 import TodaySpecials from './components/TodaySpecials/TodaySpecials';
 
@@ -16,6 +17,7 @@ function App() {
       <AboutUs/>
       <Testimonials/>
       <Contact/>
+      <Join/>
       <Footer/>
     </>
   );

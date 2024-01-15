@@ -17,7 +17,7 @@ const Contact = () => {
             minus.
           </span>
 
-          <div className="paddings contactModes">
+          <div className="paddings flexCenter contactModes">
             {/* first row */}
             <div className="flexStart row">
               <div className="flexColCenter mode">
