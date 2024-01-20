@@ -7,9 +7,9 @@ import { sliderSettings } from "../../utils/common";
 
 const TodaySpecials = () => {
   return (
-    <section className="todaySpecial-wrapper">
+    <section id="todaySpecial" className="todaySpecial-wrapper">
       <div className="paddings innerWidth todaySpecial-container">
-        <div className="todaySpecial-head flexColStart">
+        <div className="todaySpecial-head flexStart">
           <span className="primaryText">TODAY'S SPECIALS!</span>
         </div>
 

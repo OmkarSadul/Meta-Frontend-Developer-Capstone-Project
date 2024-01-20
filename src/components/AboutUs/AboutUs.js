@@ -6,7 +6,6 @@ import {
   AccordionItemHeading,
   AccordionItemButton,
   AccordionItemPanel,
-  AccordionItemState,
 } from "react-accessible-accordion";
 import "react-accessible-accordion/dist/fancy-example.css";
 import data from '../../utils/accordion';
@@ -14,7 +13,7 @@ import {ChevronDownIcon} from "@heroicons/react/24/solid";
 
 const AboutUs = () => {
   return (
-    <section className="a-wrapper">
+    <section id="about" className="a-wrapper">
       <div className="paddings innerWidth flexCenter a-container">
         {/* left side */}
         <div className="a-left">

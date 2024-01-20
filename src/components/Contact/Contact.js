@@ -6,7 +6,7 @@ import { FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <section className="c-wrapper">
+    <section id="contact" className="c-wrapper">
       <div className="paddings innerWidth flexCenter contact-container">
         {/* left side */}
         <div className="flexColStart c-left">

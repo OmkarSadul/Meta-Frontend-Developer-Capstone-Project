@@ -10,7 +10,7 @@ import { TestimonialsData } from "../../utils/testimonials";
 
 const Testimonials = () => {
   return (
-    <div className="  testimonials">
+    <div id="testimonials" className="  testimonials">
       <div className="paddings innerWidth wrapper">
         <div className="flexColStart container">
           <span className="primaryText">TOP RATED</span>

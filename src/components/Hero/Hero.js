@@ -1,20 +1,19 @@
 import React from "react";
 import "./Hero.css";
-import { MapPinIcon, StarIcon } from "@heroicons/react/24/solid";
+import { StarIcon } from "@heroicons/react/24/solid";
 import CountUp from "react-countup";
+import { Link } from "react-scroll";
 
 const Hero = () => {
   return (
-    <section className="hero-wrapper">
+    <section id="home" className="hero-wrapper">
       <div className="paddings innerWidth flexCenter hero-container">
         {/* left section */}
         <div className="flexColStart hero-left">
           <div className="hero-title">
             {/* <div className="yellow-circle"/> */}
             <h1>LITTLE LEMON</h1>
-            <h3>
-              Kothrud, Pune
-            </h3>
+            <h3>Kothrud, Pune</h3>
           </div>
 
           <div className="flexColStart hero-dec">
@@ -27,17 +26,48 @@ const Hero = () => {
             </span>
           </div>
 
-          <div className="flexCenter search-bar">
-            <MapPinIcon color="var(--blue)" height={30} width={30} />
-            <input type="text" />
-            <button className="button">Search</button>
+          <div className="flexStart search-bar">
+            {/* <MapPinIcon color="var(--blue)" height={30} width={30} /> */}
+            {/* <input type="text" /> */}
+            <Link
+              activeClass="active"
+              to="/"
+              spy={true}
+              smooth={true}
+              offset={-62}
+              duration={300}
+              className="h-link"
+            >
+              <button className="button">Book a Table</button>
+            </Link>
+            <Link
+              activeClass="active"
+              to="todaySpecial"
+              spy={true}
+              smooth={true}
+              offset={-62}
+              duration={300}
+              className="h-link"
+            >
+              <button className="button h-button">Today's Special</button>
+            </Link>
+            <Link
+              activeClass="active"
+              to="/"
+              spy={true}
+              smooth={true}
+              offset={-62}
+              duration={300}
+              className="h-link"
+            >
+              <button className="button h-button">Get Direction</button>
+            </Link>
           </div>
 
           <div className="flexCenter stats">
-
             <div className="flexColCenter stat">
               <span>
-                <CountUp start={4985} end={5000} duration={4}/>
+                <CountUp start={4985} end={5000} duration={4} />
                 <span>+</span>
               </span>
               <span className="secondaryText2">Happy Customers</span>
@@ -45,7 +75,7 @@ const Hero = () => {
 
             <div className="flexColCenter stat">
               <span>
-                <CountUp end={27} duration={4}/>
+                <CountUp end={27} duration={4} />
                 <span>+</span>
               </span>
               <span className="secondaryText2">Award Winning</span>
@@ -56,12 +86,13 @@ const Hero = () => {
                 {/* <span>4</span> */}
                 <CountUp end={4} duration={4} />
                 <span>.</span>
-                <CountUp end={6} duration={4}/>
-                <span><StarIcon height={23} width={23}/></span>
+                <CountUp end={6} duration={4} />
+                <span>
+                  <StarIcon height={23} width={23} />
+                </span>
               </span>
               <span className="secondaryText2">Our Rating</span>
             </div>
-
           </div>
         </div>
 

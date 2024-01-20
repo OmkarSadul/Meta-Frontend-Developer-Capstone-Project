@@ -1,13 +1,22 @@
 .h-wrapper{
-    color: white;
+    /* color: white; */
     /* background: black; */
 }
 
 .h-container{
     justify-content: space-between;
     padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.6rem;
     color:#495E57;
+    position: fixed;
+    background: white;
+    z-index: 10;
+    border-bottom: 1px solid #495e5767;
+}
+.h-wrapper>hr{
+    height: 10px;
+    color: black;
+    z-index: 10;
 }
 
 .h-menu{
@@ -18,7 +27,17 @@ a{
     font-weight: 600;
 }
 
+.inside-img:hover{
+    cursor: pointer;
+}
+
 .inside-menu:hover{
     cursor: pointer;
     color: #f4ce14;
+    border-bottom: 3px solid var(--primary);
+}
+
+.h-menu .active{
+    /* color: #f4ce14; */
+    border-bottom: 3px solid var(--primary);
 }
