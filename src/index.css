@@ -1,5 +1,4 @@
-:root{
-
+:root {
   /* primary green #495e57 */
   /* primary yellow #f4ce14 */
   /* secondary pink #ee9972 */
@@ -7,29 +6,29 @@
   /* highlight1 #edefee*/
   /* highlight2 #333333*/
 
-  --primary:#f4ce14;
-  --primary3:#f4b814;
-  --primary2:#495e57;
+  --primary: #f4ce14;
+  --primary3: #f4b814;
+  --primary2: #495e57;
   --secondary: rgba(255, 255, 255, 0.78);
-  --secondaryPink:#ee9972;
-  --secondaryCream:#fbdabb;
-  --black:#131110;
-  --darkGreen:#495e57;
-  --highlight1:#edefee;
-  --highlight3:#f9fcfa;
-  --highlight2:#333333;
-  --yellow-gradient:linear-gradient(97.05deg, #f2d12d 3.76%, #f4ce14 100%);
-  --orange-gradient:linear-gradient(270deg, #ffb978 0%, #ff922d 100%);
-  --blue:#5a79f6;
-  --lightBlue:#eeeeff;
-  --shadow:0px 23px 21px -8px rgba(136, 160, 255, 0.25);
+  --secondaryPink: #ee9972;
+  --secondaryCream: #fbdabb;
+  --black: #131110;
+  --darkGreen: #495e57;
+  --highlight1: #edefee;
+  --highlight3: #f9fcfa;
+  --highlight2: #333333;
+  --yellow-gradient: linear-gradient(97.05deg, #f2d12d 3.76%, #f4ce14 100%);
+  --orange-gradient: linear-gradient(270deg, #ffb978 0%, #ff922d 100%);
+  --blue: #5a79f6;
+  --lightBlue: #eeeeff;
+  --shadow: 0px 23px 21px -8px rgba(136, 160, 255, 0.25);
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -38,15 +37,15 @@ a {
   text-decoration: none;
 }
 
-.paddings{
+.paddings {
   padding: 1.5rem;
 }
 
-.innerWidth{
+.innerWidth {
   width: 100%;
 }
 
-.flexCenter{
+.flexCenter {
   display: flex;
   row-gap: 2rem;
   justify-content: center;
@@ -54,68 +53,74 @@ a {
   flex-wrap: wrap;
 }
 
-.flexStart{
+.flexStart {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-.flexEnd{
+.flexEnd {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-.flexColCenter{
+.flexCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flexColCenter {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.flexColStart{
+.flexColStart {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
 
-.flexColEnd{
+.flexColEnd {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
 }
 
-.primaryText{
+.primaryText {
   color: orangered;
   font-weight: bold;
   font-size: 2rem;
 }
 
-.primaryText2{
+.primaryText2 {
   color: #495e57;
   font-weight: bold;
   font-size: 2rem;
 }
 
-.secondaryText{
+.secondaryText {
   color: rgb(140, 139, 139);
   font-size: 0.9rem;
 }
 
-.secondaryText2{
+.secondaryText2 {
   color: rgb(241, 240, 240);
   font-size: 0.9rem;
 }
 
-.orangeText{
+.orangeText {
   color: var(--primary);
   font-size: 1.5rem;
   font-weight: 600;
 }
 
-.button{
+.button {
   font-weight: 550;
   padding: 0.6rem 1.4rem;
   color: var(--primary2);
@@ -125,36 +130,36 @@ a {
   transition: all 300ms ease-in;
 }
 
-.button:hover{
+.button:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
 
 /* media queries */
-@media (min-width:1536px){
-  .innerWidth{
+@media (min-width: 1536px) {
+  .innerWidth {
     max-width: 1280px;
     margin: auto;
   }
 }
 
-@media (min-width:640px){
-  .paddings{
+@media (min-width: 640px) {
+  .paddings {
     padding: 4rem;
   }
 }
 
-@media (min-width:1280px), (min-width:768px){
-  .paddings{
+@media (min-width: 1280px), (min-width: 768px) {
+  .paddings {
     padding: 2rem;
   }
 }
 
-@media (max-width:640px){
-  .primaryText{
+@media (max-width: 640px) {
+  .primaryText {
     font-size: 1.5rem;
   }
-  .orangeText{
+  .orangeText {
     font-size: 1.2rem;
   }
 }

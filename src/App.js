@@ -12,9 +12,9 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path="/" Component={HomePage}/>
-        <Route path="/menu" Component={Menu}/>
-        <Route path="/reservation" Component={Reservation}/>
+        <Route path="/" element={<HomePage/>} Component={HomePage}/>
+        <Route path="/menu" element={<Menu/>} Component={Menu}/>
+        <Route path="/reservation" element={<Reservation/>} Component={Reservation}/>
       </Routes>
       <Footer />
       {/* <GoToTop/> */}
