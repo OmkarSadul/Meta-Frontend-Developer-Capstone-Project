@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import Logo from "../../assets/Asset20.png";
-import { FaSquareXTwitter, FaLocationDot, FaMobileRetro, FaLink } from "react-icons/fa6";
+import { FaSquareXTwitter, FaLocationDot, FaMobileRetro, FaGithub } from "react-icons/fa6";
 import { IoCall } from "react-icons/io5";
 import { FaFacebookSquare, FaEnvelope, FaInstagram, FaYoutube } from "react-icons/fa";
 import { Link as ScrollLink } from "react-scroll";
@@ -102,8 +102,8 @@ const Footer = () => {
           <div className="detail">
             <span>Resource</span>
             <span className="pngLine">
-              <FaLink className="pngIcon"/>
-              <a>Safety Privacy & Terms</a>
+              <FaGithub className="pngIcon"/>
+              <a href="https://github.com/OmkarSadul/Meta-Frontend-Developer-Capstone-Project" target="blank">Git Hub</a>
             </span>
           </div>
         </div>
