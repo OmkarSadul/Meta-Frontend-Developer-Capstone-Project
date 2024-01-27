@@ -5,8 +5,8 @@
 
 .menus{
     display: grid;
-    width: 90%;
-    grid-template-columns: 15% auto;
+    width: 95%;
+    grid-template-columns: 25% auto;
 }
 
 .menu{
@@ -34,7 +34,7 @@ li .active{
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     height: 27rem;
     overflow-y: scroll;
-    grid-gap: 2rem;
+    grid-gap: 1.8rem;
     justify-content: space-between;
 }
 
@@ -57,7 +57,7 @@ li .active{
 .menu-box{
     height: 12rem;
     width:12rem;
-    padding: 1rem;
+    padding: 0.4rem;
     /* background: blue; */
 }
 

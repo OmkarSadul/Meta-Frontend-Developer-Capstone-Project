@@ -13,7 +13,6 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage/>} Component={HomePage}/>
-        <Route path="/menu" element={<Menu/>} Component={Menu}/>
         <Route path="/reservation" element={<Reservation/>} Component={Reservation}/>
       </Routes>
       <Footer />

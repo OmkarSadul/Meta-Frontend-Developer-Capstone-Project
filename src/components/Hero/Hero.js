@@ -3,6 +3,7 @@ import "./Hero.css";
 import { StarIcon } from "@heroicons/react/24/solid";
 import CountUp from "react-countup";
 import { Link } from "react-scroll";
+import { NavLink as RouterLink } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -29,17 +30,7 @@ const Hero = () => {
           <div className="flexStart search-bar">
             {/* <MapPinIcon color="var(--blue)" height={30} width={30} /> */}
             {/* <input type="text" /> */}
-            <Link
-              activeClass="active"
-              to="/"
-              spy={true}
-              smooth={true}
-              offset={-62}
-              duration={300}
-              className="h-link"
-            >
-              <button className="button">Book a Table</button>
-            </Link>
+            <RouterLink className="h-link" to="/reservation"><button className="button">Book a Table</button></RouterLink>
             <Link
               activeClass="active"
               to="todaySpecial"

@@ -27,12 +27,20 @@ const Header = () => {
   return (
     <section id="navigation" className="flexCenter paddings h-wrapper">
       <div className="flexCenter paddings innerWidth h-container">
-        <>
-          <img src="./Asset16.png" alt="logo" width={170} />
-        </>
+        <div className="header-logo">
+          <ScrollLink
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={-60}
+            duration={300}
+          >
+            <img src="./Asset16.png" alt="logo" width={170} />
+          </ScrollLink>
+        </div>
 
         <div className="flexCenter h-menu">
-          {location !== "menu" ? (
+          {location !== "reservation" ? (
             <>
               <li>
                 <ScrollLink
@@ -43,6 +51,17 @@ const Header = () => {
                   duration={300}
                 >
                   Home
+                </ScrollLink>
+              </li>
+              <li>
+                <ScrollLink
+                  to="menu"
+                  spy={true}
+                  smooth={true}
+                  offset={-60}
+                  duration={300}
+                >
+                  Menu
                 </ScrollLink>
               </li>
               <li>
@@ -79,35 +98,18 @@ const Header = () => {
                 </ScrollLink>
               </li>
               <li>
-                <RouterLink to="/menu">Menu</RouterLink>
-              </li>
-              <li>
                 <RouterLink to="/reservation">Reservation</RouterLink>
               </li>
             </>
           ) : (
             <>
-              <li>
-                <button onClick={() => goToPageAndScroll("home")}>Home</button>
+              <li onClick={() => goToPageAndScroll("home")}>Home</li>
+              <li onClick={() => goToPageAndScroll("menu")}>Menu</li>
+              <li onClick={() => goToPageAndScroll("about")}>About</li>
+              <li onClick={() => goToPageAndScroll("testimonials")}>
+                Testimonials
               </li>
-              <li>
-                <button onClick={() => goToPageAndScroll("about")}>
-                  About
-                </button>
-              </li>
-              <li>
-                <button onClick={() => goToPageAndScroll("testimonials")}>
-                  Testimonials
-                </button>
-              </li>
-              <li>
-                <button onClick={() => goToPageAndScroll("contact")}>
-                  Contact
-                </button>
-              </li>
-              <li>
-                <RouterLink to="/test">Menu</RouterLink>
-              </li>
+              <li onClick={() => goToPageAndScroll("contact")}>Contact</li>
               <li>
                 <RouterLink to="/reservation">Reservation</RouterLink>
               </li>

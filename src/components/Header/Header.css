@@ -19,25 +19,26 @@
     z-index: 10;
 }
 
-.h-menu{
-    gap: 2rem;
-}
-
-a{
-    font-weight: 600;
-}
-
-.inside-img:hover{
+.header-logo{
     cursor: pointer;
 }
 
-.inside-menu:hover{
+.h-menu{
+    gap: 1.5rem;
+}
+
+.h-menu li{
+    list-style-type: none;
+    font-weight: 600;
+}
+
+.h-menu li:hover{
     cursor: pointer;
     color: #f4ce14;
     border-bottom: 3px solid var(--primary);
 }
 
 .h-menu .active{
-    /* color: #f4ce14; */
+    color: #f4ce14;
     border-bottom: 3px solid var(--primary);
 }

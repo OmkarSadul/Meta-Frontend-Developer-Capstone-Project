@@ -4,6 +4,8 @@ import Logo from "../../assets/Asset20.png";
 import { FaSquareXTwitter, FaLocationDot, FaMobileRetro, FaLink } from "react-icons/fa6";
 import { IoCall } from "react-icons/io5";
 import { FaFacebookSquare, FaEnvelope, FaInstagram, FaYoutube } from "react-icons/fa";
+import { Link as ScrollLink } from "react-scroll";
+import { NavLink as RouterLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -41,16 +43,32 @@ const Footer = () => {
           <div className="detail">
             <span>Quick Link</span>
             <span className="pngLine">
-              <span>Home</span>
+              <ScrollLink
+                  to="home"
+                  spy={true}
+                  smooth={true}
+                  offset={-60}
+                  duration={300}
+                >Home</ScrollLink>
             </span>
             <span className="pngLine">
-              <span>About</span>
+              <ScrollLink
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={-60}
+                  duration={300}>About</ScrollLink>
             </span>
             <span className="pngLine">
-              <span>Menu</span>
+              <ScrollLink
+                  to="menu"
+                  spy={true}
+                  smooth={true}
+                  offset={-60}
+                  duration={300}>Menu</ScrollLink>
             </span>
             <span className="pngLine">
-              <span>Reservation</span>
+              <RouterLink to="/reservation">Reservation</RouterLink>
             </span>
             <span className="pngLine">
               <span>Order Online</span>
@@ -63,19 +81,19 @@ const Footer = () => {
             <span>Follow us</span>
             <span className="pngLine">
               <FaFacebookSquare className="facebook pngIcon" />
-              <span>Facebook</span>
+              <a href="https://www.facebook.com/" target="blank">Facebook</a>
             </span>
             <span className="pngLine">
               <FaInstagram className="instagram pngIcon"/>
-              <span>Instagram</span>
+              <a href="https://www.instagram.com/" target="blank">Instagram</a>
             </span>
             <span className="pngLine">
               <FaSquareXTwitter className="twitter pngIcon"/>
-              <span>Twitter</span>
+              <a href="https://twitter.com/?lang=en" target="blank">Twitter</a>
             </span>
             <span className="pngLine">
               <FaYoutube className="youtube pngIcon"/>
-              <span>YouTube</span>
+              <a href="https://www.youtube.com/" target="blank">YouTube</a>
             </span>
           </div>
         </div>
@@ -85,7 +103,7 @@ const Footer = () => {
             <span>Resource</span>
             <span className="pngLine">
               <FaLink className="pngIcon"/>
-              <span>Safety Privacy & Terms</span>
+              <a>Safety Privacy & Terms</a>
             </span>
           </div>
         </div>

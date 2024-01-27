@@ -1,0 +1,41 @@
+.reservation-container>div{
+    flex: 1;
+}
+
+.r-form{
+    display: grid;
+    width: 80%;
+    grid-template-columns: 50% auto;
+}
+
+.r-label{
+    font-size: 1rem;
+    color: var(--primary2);
+    /* border: 1px solid black; */
+    margin-top: 0;
+    margin-bottom: 1.9rem;
+    /* padding: 0.3rem ; */
+}
+.input-box {
+    color: var(--primary2);
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 0.3rem 1rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--primary2);
+}
+
+.input-box2{
+    width: 12rem;
+    text-align: center;
+    color: var(--primary2);
+}
+
+.r-button{
+    display: grid;
+    width: 100%;
+    margin-left: 40%;
+    margin-right: 40%;
+}

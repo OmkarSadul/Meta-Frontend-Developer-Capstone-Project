@@ -12,7 +12,7 @@ const Menu = () => {
 
   return (
     <div id="menu" className="flexColCenter paddings innerWidth menu-container">
-      <h1>Our Menu</h1>
+      <h1 className="primaryText">OUR MENU</h1>
 
       <div className="menus">
         <ul className="menu">
