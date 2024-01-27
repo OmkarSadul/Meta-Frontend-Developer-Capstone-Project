@@ -104,3 +104,14 @@
 .copyright>span{
     font-size: 0.7rem;
 }
+
+@media (max-width: 768px) {
+  .cFooter{
+      flex-direction: column;
+  }
+  .cFooter{
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+}

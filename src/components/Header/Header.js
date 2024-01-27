@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 import {
   NavLink as RouterLink,
@@ -7,8 +7,19 @@ import {
 } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import * as Scroll from "react-scroll";
+import { IoMenu } from "react-icons/io5";
 
 const Header = () => {
+
+  const [menuOpened, setMenuOpened]=useState(false);
+
+  const getMenuStyles=(menuOpened)=>{
+    if (document.documentElement.clientWidth<=800)
+    {
+      return {right:!menuOpened && "-100%"}
+    }
+  }
+
   const path = useLocation().pathname;
   const location = path.split("/")[1];
   const navigate = useNavigate();
@@ -39,7 +50,7 @@ const Header = () => {
           </ScrollLink>
         </div>
 
-        <div className="flexCenter h-menu">
+        <div className="flexCenter h-menu" style={getMenuStyles(menuOpened)}>
           {location !== "reservation" ? (
             <>
               <li>
@@ -118,6 +129,9 @@ const Header = () => {
           <button className="button">
             <a href="">Order Online</a>
           </button>
+        </div>
+        <div className="menu-icon" onClick={()=>setMenuOpened((prev)=>!prev)}>
+          <IoMenu size={30} />
         </div>
       </div>
     </section>

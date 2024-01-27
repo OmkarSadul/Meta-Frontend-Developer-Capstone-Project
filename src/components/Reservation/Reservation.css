@@ -39,3 +39,16 @@
     margin-left: 40%;
     margin-right: 40%;
 }
+
+@media (max-width: 1024px) {
+    .reservation-container {
+      flex-direction: column;
+    }
+  
+    @media (max-width: 768px) {
+      .r-button{
+        font-size: 0.8rem;
+        margin-right: 0%;
+      }
+    }
+  }
