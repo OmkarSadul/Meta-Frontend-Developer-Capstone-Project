@@ -6,6 +6,7 @@ import Testimonials from '../Testimonials/Testimonials'
 import Contact from '../Contact/Contact'
 import Join from '../Join/Join'
 import Menu from '../Menu/Menu'
+import Footer from '../Footer/Footer'
 
 const HomePage = () => {
   return (
@@ -17,6 +18,7 @@ const HomePage = () => {
         <Testimonials/>
         <Contact/>
         <Join/>
+        <Footer/>
     </div>
   )
 }

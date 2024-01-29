@@ -15,7 +15,7 @@ function App() {
         <Route path="/" element={<HomePage/>} Component={HomePage}/>
         <Route path="/reservation" element={<Reservation/>} Component={Reservation}/>
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
       {/* <GoToTop/> */}
     </>
   );

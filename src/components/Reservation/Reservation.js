@@ -5,7 +5,6 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
 const Reservation = () => {
-  let flag = false;
   const [startDate, setStartDate] = useState(new Date());
   const [name, setName] = useState("");
   const [time, setTime] = useState("");
@@ -18,7 +17,7 @@ const Reservation = () => {
     );
   }
   return (
-    <section className="reservation-wrapper">
+    <section id="reservation" className="reservation-wrapper">
       <div className="paddings innerWidth flexCenter reservation-container">
         {/* left side */}
         <div className="reservation-left">

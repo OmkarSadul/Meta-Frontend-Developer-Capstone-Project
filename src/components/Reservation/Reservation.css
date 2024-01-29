@@ -1,6 +1,10 @@
 .reservation-container>div{
     flex: 1;
 }
+.reservation-left .image-container{
+  border: 8px solid rgb(232, 232, 232);
+  margin-left: 5rem;
+}
 
 .r-form{
     display: grid;

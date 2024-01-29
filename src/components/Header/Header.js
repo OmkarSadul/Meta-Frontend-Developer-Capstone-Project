@@ -109,7 +109,7 @@ const Header = () => {
                 </ScrollLink>
               </li>
               <li>
-                <RouterLink to="/reservation">Reservation</RouterLink>
+                <RouterLink to="/reservation" offset={0}>Reservation</RouterLink>
               </li>
             </>
           ) : (
