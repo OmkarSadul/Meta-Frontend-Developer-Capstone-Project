@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Menu.css";
 import { MenuData } from "../../utils/menu";
-import { NavLink } from "react-router-dom";
 
 const Menu = () => {
   const [MenuDatas, setMenuDatas] = useState(MenuData);

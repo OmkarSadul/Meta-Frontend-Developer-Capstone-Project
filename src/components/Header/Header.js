@@ -10,15 +10,13 @@ import * as Scroll from "react-scroll";
 import { IoMenu } from "react-icons/io5";
 
 const Header = () => {
+  const [menuOpened, setMenuOpened] = useState(false);
 
-  const [menuOpened, setMenuOpened]=useState(false);
-
-  const getMenuStyles=(menuOpened)=>{
-    if (document.documentElement.clientWidth<=800)
-    {
-      return {right:!menuOpened && "-100%"}
+  const getMenuStyles = (menuOpened) => {
+    if (document.documentElement.clientWidth <= 800) {
+      return { right: !menuOpened && "-100%" };
     }
-  }
+  };
 
   const path = useLocation().pathname;
   const location = path.split("/")[1];
@@ -51,7 +49,7 @@ const Header = () => {
         </div>
 
         <div className="flexCenter h-menu" style={getMenuStyles(menuOpened)}>
-          {location !== "reservation" ? (
+          {location !== ("reservation" || "orderOnline") ? (
             <>
               <li>
                 <ScrollLink
@@ -109,7 +107,12 @@ const Header = () => {
                 </ScrollLink>
               </li>
               <li>
-                <RouterLink to="/reservation" offset={0}>Reservation</RouterLink>
+                <RouterLink to="/reservation">Reservation</RouterLink>
+              </li>
+              <li>
+                <button className="button">
+                  <RouterLink to="/orderOnline">Order Online</RouterLink>
+                </button>
               </li>
             </>
           ) : (
@@ -124,13 +127,21 @@ const Header = () => {
               <li>
                 <RouterLink to="/reservation">Reservation</RouterLink>
               </li>
+              <li>
+                <button className="button">
+                  <RouterLink to="/orderOnline">Order Online</RouterLink>
+                </button>
+              </li>
             </>
           )}
-          <button className="button">
-            <a href="">Order Online</a>
-          </button>
+          {/* <button className="button">
+            <a href="orderOnline">Order Online</a>
+          </button> */}
         </div>
-        <div className="menu-icon" onClick={()=>setMenuOpened((prev)=>!prev)}>
+        <div
+          className="menu-icon"
+          onClick={() => setMenuOpened((prev) => !prev)}
+        >
           <IoMenu size={30} />
         </div>
       </div>

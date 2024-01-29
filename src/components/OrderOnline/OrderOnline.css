@@ -1,0 +1,10 @@
+.o-wrapper{
+    text-align: center;
+}
+
+.o-wrapper>h1{
+    text-transform: uppercase;
+    padding-top: 10%;
+    color: orangered;
+    font-size: 3rem;
+}
